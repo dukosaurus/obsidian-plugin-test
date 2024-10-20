@@ -5,6 +5,6 @@ export default class examplePlugin extends Plugin{
 
 	onload(): void | Promise<void> {
 		this.statusBarTextElement = this.addStatusBarItem().createEl('span')
-		this.statusBarTextElement;
+		this.statusBarTextElement.textContent = "hello";
 	}
 };
