@@ -1,7 +1,7 @@
 import { Plugin, setIcon } from "obsidian";
 
 export default class examplePlugin extends Plugin{ 
-	onload(): void | Promise<void> {
+	onload() {
 		const item = this.addStatusBarItem();
 		setIcon(item, 'baby')
 
